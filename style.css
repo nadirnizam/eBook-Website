@@ -53,6 +53,16 @@ body,html{
     border-radius: 0 0 10px 10px;
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: transparent;
+    outline: 1px solid rgba(0, 0, 0, 0.651);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background: rgba(0, 0, 0, 0.651);
+}
+
+
 /* Heading */
 .content{
     padding: 0 25px;
