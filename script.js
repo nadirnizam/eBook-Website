@@ -24,16 +24,17 @@ const swiper2 = new Swiper(".mySwiper2", {
 //payment geatway
 
 const download = document.getElementById('DownloadPdf');
-download.addEventListener('click', onButtonClick);
+download.addEventListener('click', () =>{
+  Instamojo.open('https://www.instamojo.com/@nadirnizam/l89fcc9f5e0d74735b4d049853e525ea9/'); 
+});
 
-function onButtonClick() {
-  Instamojo.open('https://test.instamojo.com/@subratamondal/l1e1917a4d77e4afd82eb71270e5eb1ff/');
-}
 
 // Start client-defined Callback Handler Functions 
-function onPaymentSuccessHandler (response) {
+function onPaymentSuccessHandler () {
   setTimeout(() => {
-    window.open('https://drive.google.com/file/d/1uAVJpN5u3iX3iXnc_aYVR7vMgNo9_yBG/view?usp=drive_link');
+         //TODO: change The link
+
+    window.open('https://drive.google.com/file/d/1uAVJpN5u3iX3iXnc_aYVR7vMgNo9_yBG/view?usp=drive_link'); 
   }, 2000);
 }
 
