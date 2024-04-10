@@ -65,9 +65,7 @@ download.addEventListener('click', () =>{
 // Start client-defined Callback Handler Functions 
 function onPaymentSuccessHandler () {
   setTimeout(() => {
-         //TODO: change The link
-
-    window.open('https://wa.link/cu8fg0'); 
+    window.location.replace('https://wa.link/cu8fg0');
   }, 2000);
 }
 
