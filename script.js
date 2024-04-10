@@ -8,9 +8,19 @@ const swiper = new Swiper(".mySwiper", {
       },
   });
 
+  // video paly pause function 
+  const video = document.querySelector('video');
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    }else{
+      video.pause();
+    }
+  });
+
   //testimonial swiper
 const swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1.5,
+    slidesPerView: 1.4,
     spaceBetween: 10,
     navigation: {
       nextEl: ".arrow-right",
@@ -34,7 +44,7 @@ function onPaymentSuccessHandler () {
   setTimeout(() => {
          //TODO: change The link
 
-    window.open('https://drive.google.com/file/d/1uAVJpN5u3iX3iXnc_aYVR7vMgNo9_yBG/view?usp=drive_link'); 
+    window.open('https://wa.link/cu8fg0'); 
   }, 2000);
 }
 
