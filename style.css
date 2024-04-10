@@ -51,20 +51,40 @@ body,html{
 }
 
 .image-wrapper :nth-child(2){
-    background-image: url(Images/Cover-01.png);
+    background-image: url("Images/Cover-01.png");
    
 }
 
 .image-wrapper :nth-child(3){
-    background-image: url(Images/Cover-02.png);
+    background-image: url("Images/Cover-02.png");
    
+}
+
+.videoContainer{
+    width: 100%;
+    height: 90%;
+    position: relative;
 }
 
 .video{
     object-fit: cover;
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius: 0 0 10px 10px;
+}
+
+#playBtn{
+    position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: 46%;
+  background-image: url("Images/playBtn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 49px;
+  height: 48px;
+  cursor: pointer;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet{

@@ -10,13 +10,36 @@ const swiper = new Swiper(".mySwiper", {
 
   // video paly pause function 
   const video = document.querySelector('video');
-  video.addEventListener('click', () => {
+  const playBtn = document.querySelector('#playBtn');
+  
+  video.addEventListener('click', playPause);
+  playBtn.addEventListener('click', playPause);
+
+  video.onplaying = (e) => {
+    displayPlayBtn(false);
+};
+
+
+  function playPause() {
     if (video.paused) {
       video.play();
+      displayPlayBtn(false)
     }else{
       video.pause();
+      displayPlayBtn(true)
     }
-  });
+  };
+
+  function displayPlayBtn(status) {
+    if (status) {
+      playBtn.style.display = 'block';
+    }else{
+      playBtn.style.display = 'none';
+    }
+  }
+
+
+  
 
   //testimonial swiper
 const swiper2 = new Swiper(".mySwiper2", {
