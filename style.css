@@ -75,16 +75,16 @@ body,html{
 
 #playBtn{
     position: absolute;
-  z-index: 10;
-  top: 45%;
-  left: 46%;
-  background-image: url("Images/playBtn.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 49px;
-  height: 48px;
-  cursor: pointer;
+    z-index: 10;
+    top: 41%;
+    left: 42%;
+    background-image: url("Images/playBtn.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 65px;
+    height: 61px;
+    cursor: pointer;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet{
